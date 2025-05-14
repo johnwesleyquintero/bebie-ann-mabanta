@@ -4,7 +4,7 @@
 
 A responsive landing page showcasing Bebie Ann Mabanta's life, passions, and creative work as an environmental advocate and cooking enthusiast.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ccdc3e42-3cd0-4e3d-9eb4-8df613ffd398/deploy-status)](https://app.netlify.com/sites/bebieannmabanta/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b72af6e-1089-4375-b483-e0e80831c730/deploy-status)](https://app.netlify.com/projects/bebieannmabanta/deploys)
 
 ## Features
 
