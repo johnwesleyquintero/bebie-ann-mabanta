@@ -1,0 +1,15 @@
+{
+  "name": "bebie-ann-mabanta",
+  "version": "1.0.0",
+  "description": "Bebie Ann Mabanta's landing page",
+  "scripts": {
+    "build": "node build.js",
+    "start": "serve dist",
+    "dev": "serve src"
+  },
+  "author": "John Wesley Quintero",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

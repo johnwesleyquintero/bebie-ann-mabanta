@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bebie Ann Mabanta's personal website showcasing her environmental advocacy and cooking passion with reels, videos and blog posts." />
+    <title>Bebie Ann Mabanta - Environmentalist & Cooking Enthusiast</title>
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:title" content="Bebie Ann Mabanta - Explorer & Storyteller" />
+    <meta property="og:description" content="Join Bebie Ann Mabanta on her journey of discovery through photography, nature exploration, and storytelling." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bebieannmabanta.netlify.app" />
+    <meta property="og:image" content="https://bebieannmabanta.netlify.app/assets/profile_photo.jpg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="container nav-container">
+        <a href="#" class="logo">Bebie Ann Mabanta</a>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#themes" class="nav-link">Themes</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Powered by <a href="https://wescode.vercel.app/" target="_blank" rel="noopener noreferrer">Wesley Quintero</a></p>
+      </div>
+    </footer>
+
+    <!-- Gallery images with lazy loading -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+        
+        if ('IntersectionObserver' in window) {
+          let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                let lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove('lazy');
+                lazyImageObserver.unobserve(lazyImage);
+              }
+            });
+          });
+
+          lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          });
+        }
+      });
+    </script>
+
+    <header class="hero-section">
+      <!-- Background image will be applied via CSS -->
+      <h1>Bebie Ann Mabanta</h1>
+      <p>Environmentalist, Cooking Enthusiast, and Content Creator</p>
+      <a href="#about" class="cta-button">Discover My Story</a>
+    </header>
+
+<main>
+      <div class="container">
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I'm Bebie Ann Mabanta, an environmental advocate and cooking enthusiast. Through my content, I share sustainable living tips, delicious recipes, and my journey in balancing eco-consciousness with culinary creativity. Join me as I explore ways to make our planet greener while enjoying the art of cooking!
+          </p>
+          <img
+            class="image-holder"
+            src="assets/profile_photo.jpg"
+            alt="Bebie Ann Mabanta Profile Photo"
+            loading="lazy"
+          />
+        </section>
+
+        <section id="gallery">
+          <h2>My Gallery</h2>
+          <p>A glimpse into my adventures.</p>
+          <ul class="gallery-list gallery-grid">
+            <li>
+              <article class="gallery-item">
+                <img src="assets/Cooking_Demonstration.svg" alt="Cooking demonstration" />
+                <figcaption>Cooking Demonstration</figcaption>
+              </article>
+            </li>
+            <li>
+              <article class="gallery-item">
+                <img src="assets/Environmental_Tips.svg" alt="Environmental tips" />
+                <figcaption>Environmental Tips</figcaption>
+              </article>
+            </li>
+            <li>
+              <article class="gallery-item">
+                <img src="assets/Recipe_Sharing.svg" alt="Recipe sharing" />
+                <figcaption>Recipe Sharing</figcaption>
+              </article>
+            </li>
+          </ul>
+          <div class="social-share">
+            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Share on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Share on Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+          </div>
+        </section>
+
+        <section id="themes">
+          <h2>My Passions</h2>
+          <p>These are the areas where I focus my creative energy:</p>
+          <ul>
+            <li><strong>Environmental Advocacy:</strong> Sharing sustainable living practices and eco-friendly solutions.</li>
+            <li><strong>Cooking Content:</strong> Creating delicious recipes with a focus on local, seasonal ingredients.</li>
+            <li><strong>Reels & Videos:</strong> Showcasing my environmental projects and cooking adventures.</li>
+            <li><strong>Blog Posts:</strong> Documenting my journey in sustainability and culinary arts.</li>
+            <li><strong>Community Engagement:</strong> Connecting with like-minded individuals passionate about our planet.</li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Connect With Me</h2>
+          <p>
+            Follow my adventures and connect with me on social media!
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/annabelle.mabanta.923" target="_blank" class="social-link facebook">
+              <i class="fab fa-facebook"></i> Follow on Facebook
+            </a>
+          </div>
+        </section>
+
+        <section id="cta">
+          <h2>Join the Adventure!</h2>
+          <p>
+            Subscribe to my newsletter for exclusive content, travel tips, and more!
+          </p>
+          <form action="[YOUR_NEWSLETTER_SERVICE_ENDPOINT]" method="POST" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+          </form>
+        </section>
+      </div>
+</main>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> Bebie Ann Mabanta. All Rights Reserved.  Designed and built by <a href="https://wescode.vercel.app/" target="_blank" rel="noopener noreferrer">Wesley Quintero</a>.
+      </p>
+      <!-- Small nature-themed icon could go here -->
+      <i class="fas fa-leaf"></i>
+    </footer>
+
+    <script>
+      // Simple script to update the year in the footer
+      document.getElementById('currentYear').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
