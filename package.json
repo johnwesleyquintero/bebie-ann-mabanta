@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node build.js",
     "start": "serve dist",
-    "dev": "serve src"
+    "dev": "serve src",
+    "cli": "bash .cli.sh"
   },
   "author": "John Wesley Quintero",
   "license": "MIT",
